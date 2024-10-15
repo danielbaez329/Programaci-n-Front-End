@@ -23,3 +23,13 @@ p{
 li{
   color:white;
 }
+.logo{
+  width: 100px;
+  height:auto;
+}
+.flotante {
+  position: fixed; /* Fijo en la pantalla */
+   right: 20px; /* Separado 20px del borde derecho */
+   bottom: 20px; /* Separado 20px del borde inferior */
+   width: 150px;
+}
