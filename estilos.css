@@ -23,13 +23,49 @@ p{
 li{
   color:white;
 }
-.logo{
-  width: 100px;
-  height:auto;
-}
+
 .flotante {
   position: fixed; /* Fijo en la pantalla */
    right: 20px; /* Separado 20px del borde derecho */
    bottom: 20px; /* Separado 20px del borde inferior */
    width: 150px;
+}
+header{
+  display: flex;
+  justify-content: space-around;
+}
+.logos{
+  display: flex;
+  width: 180px;
+  height:auto;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.lg{
+  width: 150px;
+  border-radius: 15px;
+}
+.maps{
+  width: 200px;
+  height:150px;
+}
+footer{
+  display: flex;
+  justify-content: space-around;
+
+}
+.img{
+  display: flex;
+  width: 100px;
+  height:auto;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.fter{
+  display: flex;
+  flex-wrap: nowrap;
 }
