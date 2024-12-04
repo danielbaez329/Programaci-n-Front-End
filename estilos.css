@@ -82,3 +82,75 @@ footer{
 a:hover{
   color: violet;
 }
+@media (max-width: 768px) {
+  body {
+    background-color: #e0f7fa;
+  }
+
+  header {
+    background-color: #004d99;
+  }
+
+  nav {
+    font-size: 14px;
+  }
+
+  /* Elemento visible solo en móviles */
+  .visible-en-moviles {
+    display: block;
+    background-color: #ffcc00;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  /* Elemento oculto en móviles */
+  .oculto-en-computadoras {
+    display: none;
+  }
+}
+
+/* Breakpoint 2: Tablets (769px a 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    background-color: #d1c4e9;
+  }
+
+  header {
+    background-color: #5e35b1;
+  }
+
+  nav {
+    font-size: 16px;
+  }
+}
+
+/* Breakpoint 3: Computadoras (mín 1025px) */
+@media (min-width: 1025px) {
+  body {
+    background-color: #ffffff;
+  }
+
+  header {
+    background-color: #0073e6;
+  }
+
+  nav {
+    font-size: 18px;
+  }
+
+  /* Elemento visible solo en móviles no aparece */
+  .visible-en-moviles {
+    display: none;
+  }
+
+  .oculto-en-computadoras {
+    display: block;
+    background-color: #ff5722;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
