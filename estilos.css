@@ -75,6 +75,14 @@ footer{
   padding-top: 6%;
   padding-bottom: 6%;
 }
+.foto{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 18vh;
+  height: 9vw;
+  justify-content: space-between;
+
+}
 .fter{
   display: flex;
   flex-wrap: nowrap;
@@ -138,6 +146,12 @@ a:hover{
 
   nav {
     font-size: 18px;
+  }
+  section{
+    background: rgb(102,153,255);
+  }
+  aside{
+    background: rgb(102,153,255);
   }
 
   /* Elemento visible solo en móviles no aparece */
