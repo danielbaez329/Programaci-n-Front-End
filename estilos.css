@@ -1,21 +1,21 @@
 body {
-  background-color:rgb(102,153,255);
+  background-color: blue;
 }
 h1 {
   text-align: center;
   font-size: 300%;
-  color: rgb(0,51,153);
+  color:lightblue;
   text-decoration: underline;
 }
 .text{
   text-align: center;
   font-size: 180%;
-  color: white;
+  color: lightblue;
   text-decoration: underline;
 }
 .titulos{
   font-size: 210%;
-  color: rgb(0,51,153);
+  color: lightblue;
   text-decoration: underline;
 }
 img{
@@ -29,7 +29,6 @@ p{
 li{
   color:white;
 }
-
 .flotante {
   position: fixed; /* Fijo en la pantalla */
    right: 1%; /* Separado 20px del borde derecho */
@@ -77,11 +76,12 @@ footer{
 }
 .foto{
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap; /* No permite que los elementos pasen a otra línea */
+  justify-content: space-between; /* Espacio uniforme entre los elementos */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+  gap: 1rem;
   width: 18vh;
   height: 9vw;
-  justify-content: space-between;
-
 }
 .fter{
   display: flex;
@@ -92,7 +92,7 @@ a:hover{
 }
 @media (max-width: 768px) {
   body {
-    background-color: #e0f7fa;
+    background-color: violet;
   }
 
   header {
@@ -103,7 +103,7 @@ a:hover{
     font-size: 14px;
   }
 
-  /* Elemento visible solo en móviles */
+
   .visible-en-moviles {
     display: block;
     background-color: #ffcc00;
@@ -113,16 +113,16 @@ a:hover{
     margin-top: 10px;
   }
 
-  /* Elemento oculto en móviles */
+
   .oculto-en-computadoras {
     display: none;
   }
 }
 
-/* Breakpoint 2: Tablets (769px a 1024px) */
+/* Breakpoint 2: Tablets  */
 @media (min-width: 769px) and (max-width: 1024px) {
   body {
-    background-color: #d1c4e9;
+    background-color: pink;
   }
 
   header {
@@ -134,26 +134,11 @@ a:hover{
   }
 }
 
-/* Breakpoint 3: Computadoras (mín 1025px) */
+/* Breakpoint 3: Computadoras  */
 @media (min-width: 1025px) {
-  body {
-    background-color: #ffffff;
+  body{
+    background-color: #335D94;
   }
-
-  header {
-    background-color: #0073e6;
-  }
-
-  nav {
-    font-size: 18px;
-  }
-  section{
-    background: rgb(102,153,255);
-  }
-  aside{
-    background: rgb(102,153,255);
-  }
-
   /* Elemento visible solo en móviles no aparece */
   .visible-en-moviles {
     display: none;
@@ -161,7 +146,7 @@ a:hover{
 
   .oculto-en-computadoras {
     display: block;
-    background-color: #ff5722;
+    background-color: green;
     padding: 10px;
     text-align: center;
     font-size: 16px;
